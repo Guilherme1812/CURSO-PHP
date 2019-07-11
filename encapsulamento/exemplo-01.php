@@ -1,0 +1,22 @@
+<?php 
+
+class Pessoa{
+
+	public $nome = "Rasmus Ledorf";
+	protected $idade = 41;
+	private $senha = "123456789";
+
+	public function verDados(){
+
+		echo $this->nome. " <br/>";
+		echo $this->idade. " <br/>";
+		echo $this->senha. " <br/>";
+	}
+
+
+}
+
+$objeto = new Pessoa();
+//echo $objeto->nome. " <br/>";
+$objeto->verDados();
+ ?>
